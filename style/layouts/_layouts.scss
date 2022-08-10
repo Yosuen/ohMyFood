@@ -1,5 +1,23 @@
-.header {
+.header-container {
+    width: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
+    padding: 20px 0 0 0;
+
+}
+
+.logo {
+    width: 45%;
+    display: flex;
+    justify-self: center;
+    margin: auto;
+    padding-bottom: 10px;
+}
+
+.header-container > div {
+    width: 100%;
+    -moz-box-shadow: 0 2px 2px rgba(0, 0, 0, 0.2);
+    -webkit-box-shadow: 0 2px 2px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 2px 2px rgba(0, 0, 0, 0.2);
 }
