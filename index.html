@@ -6,67 +6,58 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>OhMyFood - Page d'accueil</title>
     <link rel="stylesheet" href="prod/main.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;400&display=swap" rel="stylesheet">
     <script src="https://kit.fontawesome.com/8eb4af98ba.js" crossorigin="anonymous"></script>
-
 </head>
 
 <body>
     <header>
         <div class="header-container">
-            <div class="header-logo">
-                <a href="index.html"><img src="img/logo.png" alt="logo"></a>
-            </div>
-            <div class="header-nav">
-                <nav>
-                    <ul>
-                        <li><a href="index.html">Accueil</a></li>
-                        <li><a href="menus/menu1.html">A la française</a></li>
-                        <li><a href="menus/menu2.html">La note enchantée</a></li>
-                        <li><a href="menus/menu3.html">la palette du goût</a></li>
-                        <li><a href="menus/menu4.html">Le délice des sens</a></li>
-                    </ul>
-                </nav>
+            <div>
+                <a href="index.html"><img class="logo" src="img/logo.png" alt="logo"></a>
             </div>
         </div>
     </header>
     <main>
         <div class="localisation">
             <span>
-                <i class="fa-solid fa-location-dot"></i>
+                <i class="fa-solid fa-location-dot loc-pin"></i>
             </span>
             <span>
-                <p>
+                <p class="plain-text localisation__plain-text">
                     Paris, Belleville
                 </p>
         </div>
         <section class="bienvenue">
-            <h1>Réservez le menu qui vous convient</h1>
-            <p>
+            <h1 class="bienvenue__title">Réservez le menu qui vous convient</h1>
+            <p class="plain-text bienvenue__plain-text">
                 Découvrez des restaurants d'exceptions, sélectionnés par nos soins
             </p>
             <a href="#restaurant">
                 <button>
-                    <p>Explorez nos restaurants</p>
+                    <p class="plain-text">Explorez nos restaurants</p>
                 </button>
             </a>
         </section>
         <section class="fonctionnement-container">
-            <title>Fonctionnement</title>
+            <title class="plain-text">Fonctionnement</title>
             <div class="fonctionnement-tile">
                 <div class="fonctionnement-tile-icon">
                     <span class="list-violet">1</span>
                     <i class="fa-solid fa-mobile-screen-button"></i>
-                    <p>Choisissez un restaurant</p>
+                    <p class="plain-text">Choisissez un restaurant</p>
                 </div>
                 <div class="fonctionnement-tile">
                     <span class="list-violet">1</span>
                     <i class="fa-solid fa-list-ul"></i>
-                    <p>Composez un menu</p>
+                    <p class="plain-text">Composez un menu</p>
                 </div>
                 <div class="fonctionnement-tile">
                     <span class="list-violet">1</span>
                     <i class="fa-solid fa-store"></i>
-                    <p>Dégustez au restaurant</p>
+                    <p class="plain-text">Dégustez au restaurant</p>
                 </div>
         </section>
         <section class="restaurants-container" id="restaurant">
@@ -76,8 +67,8 @@
                         <img src="img/restaurant1.jpg" alt="restaurant1">
                     </div>
                     <div class="tile-menu-text">
-                        <h2>La palette du goût</h2>
-                        <p>
+                        <h2 class="plain-text">La palette du goût</h2>
+                        <p class="plain-text">
                             Ménilmontant
                         </p>
                         <a class="filling-heart">
@@ -92,8 +83,8 @@
                         <img src="img/restaurant2.jpg" alt="restaurant2">
                     </div>
                     <div class="tile-menu-text">
-                        <h2>La note enchantée</h2>
-                        <p>
+                        <h2 class="plain-text">La note enchantée</h2>
+                        <p class="plain-text">
                             Charonne
                         </p>
                         <a class="filling-heart">
@@ -108,8 +99,8 @@
                         <img src="img/restaurant3.jpg" alt="restaurant3">
                     </div>
                     <div class="tile-menu-text">
-                        <h2>À la française</h2>
-                        <p>
+                        <h2 class="plain-text">À la française</h2>
+                        <p class="plain-text">
                             Cité Rouge
                         </p>
                         <a class="filling-heart">
@@ -124,8 +115,8 @@
                         <img src="img/restaurant4.jpg" alt="restaurant4">
                     </div>
                     <div class="tile-menu-text">
-                        <h2>Le délice des sens</h2>
-                        <p>
+                        <h2 class="plain-text">Le délice des sens</h2>
+                        <p class="plain-text">
                             Folie-Méricourt
                         </p>
                         <a class="filling-heart">
@@ -141,13 +132,14 @@
             <span class="title-police">ohmyfood</span>
             <div class="footer-nav">
                 <ul>
-                    <li><a><i class="fa-solid fa-utensils"></i>Proposer un restaurant</a></li>
-                    <li><a><i class="fa-solid fa-handshake-angle"></i>Devenir partenaire</a></li>
-                    <li><a>Mentions légales</a></li>
-                    <li><a href="mailto:contact@ohmyfood.com" target="_blank">Contact</a></li>
+                    <li class="plain-text"><a><i class="fa-solid fa-utensils"></i>Proposer un restaurant</a></li>
+                    <li class="plain-text"><a><i class="fa-solid fa-handshake-angle"></i>Devenir partenaire</a></li>
+                    <li class="plain-text"><a>Mentions légales</a></li>
+                    <li class="plain-text"><a href="mailto:contact@ohmyfood.com" target="_blank">Contact</a></li>
                 </ul>
             </div>
         </div>
     </footer>
 </body>
+
 </html>
