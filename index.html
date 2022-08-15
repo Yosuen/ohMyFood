@@ -6,9 +6,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>OhMyFood - Page d'accueil</title>
     <link rel="stylesheet" href="prod/main.css">
+    <link href="https://fonts.googleapis.com/css2?family=Shrikhand&display=swap" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;400&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400&display=swap" rel="stylesheet">
     <script src="https://kit.fontawesome.com/8eb4af98ba.js" crossorigin="anonymous"></script>
 </head>
 
@@ -31,30 +32,30 @@
                 </p>
         </div>
         <section class="bienvenue">
-            <h1 class="bienvenue__title">Réservez le menu qui vous convient</h1>
+            <h2 class="plain-text title bienvenue__title">Réservez le menu qui vous convient</h2>
             <p class="plain-text bienvenue__plain-text">
                 Découvrez des restaurants d'exceptions, sélectionnés par nos soins
             </p>
             <a href="#restaurant">
-                <button>
-                    <p class="plain-text">Explorez nos restaurants</p>
+                <button class="bouton-explorer__button">
+                    <p class="plain-text bouton-explorer__plain-text ">Explorer nos restaurants</p>
                 </button>
             </a>
         </section>
-        <section class="fonctionnement-container">
-            <title class="plain-text">Fonctionnement</title>
-            <div class="fonctionnement-tile">
-                <div class="fonctionnement-tile-icon">
+        <section class="fonctionnement">
+            <span class="fonctionnement__title">Fonctionnement</span>
+            <div class="fonctionnement__tile">
+                <div class="fonctionnement__tile--grey">
                     <span class="list-violet">1</span>
                     <i class="fa-solid fa-mobile-screen-button"></i>
                     <p class="plain-text">Choisissez un restaurant</p>
                 </div>
-                <div class="fonctionnement-tile">
+                <div class="fonctionnement__tile--grey">
                     <span class="list-violet">1</span>
                     <i class="fa-solid fa-list-ul"></i>
                     <p class="plain-text">Composez un menu</p>
                 </div>
-                <div class="fonctionnement-tile">
+                <div class="fonctionnement__tile--purple">
                     <span class="list-violet">1</span>
                     <i class="fa-solid fa-store"></i>
                     <p class="plain-text">Dégustez au restaurant</p>

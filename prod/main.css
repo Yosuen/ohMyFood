@@ -1,13 +1,15 @@
-@font-face {
-  font-family: logo-font;
-  src: url(Shrikhand-Regular.ttf);
-}
-.plain-text {
-  font-family: "Roboto", sans-serif;
+.title-police {
+  font-family: "Shrikhand", sans-serif;
 }
 
 body {
   margin: 0px;
+  font-family: "Roboto", sans-serif;
+}
+
+img {
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
 .header-container {
@@ -64,6 +66,9 @@ body {
 }
 
 .bienvenue {
+  padding-top: 25px;
+  padding-bottom: 50px;
+  background-color: #f5f5f5;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -73,6 +78,89 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+.bienvenue__title {
+  margin: 0;
+  width: 70%;
+  text-align: center;
+}
+.bienvenue__plain-text {
+  font-weight: 200;
+  width: 80%;
+  text-align: center;
+}
+
+.bouton-explorer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.bouton-explorer__button {
+  margin-top: 20px;
+  height: 55px;
+  border-radius: 25px;
+  border: 0px;
+  background: -webkit-gradient(linear, left top, left bottom, from(#ff79da), to(#9356dc));
+  background: linear-gradient(#ff79da, #9356dc);
+  padding: 0 20px;
+  -webkit-box-shadow: 0px 8px 6px rgba(0, 0, 0, 0.15);
+          box-shadow: 0px 8px 6px rgba(0, 0, 0, 0.15);
+}
+.bouton-explorer__plain-text {
+  font-size: larger;
+  font-weight: 600;
+  color: #fff;
+}
+
+.fonctionnement {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding-top: 50px;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+.fonctionnement__title {
+  padding-left: 20px;
+  font-size: 1.4em;
+  font-weight: 700;
+  width: 51%;
+}
+.fonctionnement__plain-text {
+  font-weight: 200;
+  width: 80%;
+  text-align: center;
+}
+.fonctionnement__tile {
+  width: 100%;
+  height: 100px;
+  border-radius: 25px;
+  border: 0px;
+  padding: 0 20px;
+}
+.fonctionnement__tile--grey {
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
 }
 
 .loc-pin {
