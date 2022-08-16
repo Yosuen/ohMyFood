@@ -8,8 +8,10 @@ body {
 }
 
 img {
-    visibility: hidden;
     object-fit: cover;
+    width: 100%;
+    height: -webkit-fill-available;
+    max-height: 80%;
 }
 
 .align {
