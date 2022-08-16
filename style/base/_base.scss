@@ -8,5 +8,10 @@ body {
 }
 
 img {
+    visibility: hidden;
     object-fit: cover;
+}
+
+.align {
+    display: inline-block;
 }
