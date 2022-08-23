@@ -116,34 +116,45 @@
 }
 
 .restaurant {
-    margin: 25px 10px;
+    padding: 5vw;
+    align-items: center;
+    background-color: #f6f6f6;
 }
 
 .tile-menu {
+    display: flex;
     width: 100%;
-    max-height: 300px;
     margin: 30px 0;
     background-color: #ffffff;
-    display: flex;
-    flex-flow: column nowrap;
     border-radius: 20px;
     overflow: hidden;
     box-shadow: 2px 2px 10px 1px #e0e0e0;
+    flex-direction: column;
 
-    &__img {
-        object-fit: cover;
-        display: block;
+    &__img { //contain image
+        height: 10rem;
         width: 100%;
-        height: -webkit-fill-available;
-        max-height: 70%;
     }
     &__text {
-        height: 30%;
+        justify-content: space-between;
+        display: flex;
+        flex-direction: column;
+    }
+    &__title {
+        font-size: 1em;
+        font-weight: 600;
+    }
+    &__info {
+        padding: 1rem;
+    }
+    &__image { //image itself
+        height: 10rem;
+        width: 100%;
     }
 }
 
-.title-menu-tile {
-    font-size: 1.2em;
+.tile-title {
+    font-size: 1.5em;
     font-weight: 600;
     margin-top: 10px;
 }

@@ -21,3 +21,30 @@
     -webkit-box-shadow: 0 2px 2px rgba(0, 0, 0, 0.2);
     box-shadow: 0 2px 2px rgba(0, 0, 0, 0.2);
 }
+
+.footer {
+    &__title-police {
+        padding-left: 0.3em;
+    }
+    &__list {
+        &--logo1 {
+            padding-right: 9px;
+        }
+        &--logo2 {
+            padding-right: 6px;
+        }
+        
+    }
+    &__nav {
+
+    }
+    &__text {
+        padding: 0.3em;
+    }
+}
+
+footer {
+    background-color: #343434;
+    padding: 20px 40px;
+    color: white;
+}
