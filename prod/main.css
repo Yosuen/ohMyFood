@@ -245,6 +245,8 @@ footer {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  text-decoration: none;
+  color: black;
 }
 .tile-menu__img {
   max-height: 74%;
@@ -268,6 +270,7 @@ footer {
 }
 .tile-menu__info {
   padding: 1rem;
+  text-decoration: none;
 }
 .tile-menu__image {
   -o-object-fit: cover;
