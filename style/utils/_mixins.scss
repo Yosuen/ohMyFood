@@ -3,3 +3,34 @@
     justify-content: center;
     align-items: center;
 }
+
+@mixin heart-gradient {
+    position: relative;
+    left: 90%;
+    top: -55%;
+
+    &--empty {
+        color: black;
+
+        &::before {
+            font-size: 1.5em;
+        }
+    }
+
+    &--full {
+        position: relative;
+        opacity: 0%;
+        color: transparent;
+        background: linear-gradient($rose, $violet);
+        background-clip: text;
+
+        &:hover {
+            transition: opacity 0.5s;
+            opacity: 1;
+        }
+
+        &::before {
+            font-size: 1.5em;
+        }
+    }
+}

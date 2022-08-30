@@ -1,1 +1,44 @@
-.head-img
+.arrow-back {
+    display: flex;
+    align-items: center;
+    padding: 1em;
+    text-decoration: none;
+    color: black;
+    &__arrow::before {
+        font-size: larger;
+    }
+}
+
+.title-heart {
+    position: relative;
+    padding: 2em 1.5em;
+    margin-top: -2.5em;
+    border-radius: 2em 2em 0 0;
+    background-color: white;
+
+    &__heart {
+        @include heart-gradient;
+        top: 0;
+        left: 45px;
+
+        &--empty::before {
+            font-size: 2em;
+        }
+
+        &--full {
+            left: -2.23em;
+
+            &::before {
+                font-size: 2em;
+            }
+        }
+    }
+    
+    &__title {
+            font-size: 1.8em;
+        }
+}
+
+.menu-list {
+    
+}

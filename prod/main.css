@@ -25,7 +25,7 @@ ul {
   padding: 10px 0;
 }
 
-.header-container {
+header {
   width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -36,7 +36,6 @@ ul {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  padding: 20px 0 0 0;
 }
 
 .logo {
@@ -46,7 +45,7 @@ ul {
   display: flex;
   justify-self: center;
   margin: auto;
-  padding-bottom: 10px;
+  padding: 20px 0 10px 0;
 }
 
 .header-container > div {
@@ -291,7 +290,6 @@ footer {
 }
 .tile-menu__heart--full {
   position: relative;
-  left: -28px;
   opacity: 0%;
   color: transparent;
   background: -webkit-gradient(linear, left top, left bottom, from(#ff79da), to(#9356dc));
@@ -312,6 +310,71 @@ footer {
   font-size: 1.5em;
   font-weight: 600;
   margin-top: 10px;
+}
+
+.arrow-back {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 1em;
+  text-decoration: none;
+  color: black;
+}
+.arrow-back__arrow::before {
+  font-size: larger;
+}
+
+.title-heart {
+  position: relative;
+  padding: 2em 1.5em;
+  margin-top: -2.5em;
+  border-radius: 2em 2em 0 0;
+  background-color: white;
+}
+.title-heart__heart {
+  position: relative;
+  left: 90%;
+  top: -55%;
+  top: 0;
+  left: 45px;
+}
+.title-heart__heart--empty {
+  color: black;
+}
+.title-heart__heart--empty::before {
+  font-size: 1.5em;
+}
+.title-heart__heart--full {
+  position: relative;
+  opacity: 0%;
+  color: transparent;
+  background: -webkit-gradient(linear, left top, left bottom, from(#ff79da), to(#9356dc));
+  background: linear-gradient(#ff79da, #9356dc);
+  -webkit-background-clip: text;
+          background-clip: text;
+}
+.title-heart__heart--full:hover {
+  -webkit-transition: opacity 0.5s;
+  transition: opacity 0.5s;
+  opacity: 1;
+}
+.title-heart__heart--full::before {
+  font-size: 1.5em;
+}
+.title-heart__heart--empty::before {
+  font-size: 2em;
+}
+.title-heart__heart--full {
+  left: -2.23em;
+}
+.title-heart__heart--full::before {
+  font-size: 2em;
+}
+.title-heart__title {
+  font-size: 1.8em;
 }
 
 .loc-pin {

@@ -15,18 +15,77 @@
 
 <body>
     <header>
-        <div class="header-container">
-            <a href="../index.html" class="arrow-back">
-                <i class="fa-solid fa-arrow-left"></i>
-            </a>
-            <div>
-                <img class="logo" src="../img/logo.png" alt="logo">
-            </div>
+        <a href="../index.html" class="arrow-back">
+            <i class="fa-solid fa-arrow-left arrow-back__arrow"></i>
+        </a>
+        <div>
+            <img class="logo" src="../img/logo.png" alt="logo">
         </div>
     </header>
     <main>
-        <section class="head-img">
-            <img src="../img\restaurant1.jpg" alt="restaurant1">
+        <img src="../img\restaurant1.jpg" alt="restaurant1">
+        <section class="title-heart">
+            <span class="title-heart__title title-police">La palette du goût</span>
+            <a class="title-heart__heart">
+                <i class="fa-regular fa-heart title-heart__heart--empty"></i>
+                <i class="fa-solid fa-heart title-heart__heart--full"></i>
+            </a>
+        </section>
+        <section class="menu-list">
+            <div class="menu-list__entree">
+            <span class="menu-list__entree--title">entrées</span>
+                <div class="menu-list__entree--content">
+                    <span>Fricassée d'escargot</span>
+                    <span>Au piment d'Espelette</span>
+                    <span>25€</span>
+                </div>
+                <div class="menu-list__entree--content">
+                    <span>Foie gras de canard mi-cuit</span>
+                    <span>Et ses copeaux de truffe noire</span>
+                    <span>35€</span>
+                </div>
+                <div class="menu-list__entree--content">
+                    <span>Oeuf au plat</span>
+                    <span>Assaisonné à la truffe sur lit de caviar</span>
+                    <span>20€</span>
+                </div>
+            </div>
+            <div class="menu-list__plat">
+                <span class="menu-list__plat--title">plats</span>
+                    <div class="menu-list__plat--content">
+                        <span>Filet de boeuf aux herbes<span>
+                        <span>Accompagné de sa ribambelle de légumes</span>
+                        <span>40€</span>
+                    </div>
+                    <div class="menu-list__plat--content">
+                        <span>Parmentier de queue de boeuf</span>
+                        <span>À la truffe noire sur sa purée de panais</span>
+                        <span>35€</span>
+                    </div>
+                    <div class="menu-list__plat--content">
+                        <span>Filet de turbot</span>
+                        <span>Aux agrumes</span>
+                        <span>44€</span>
+                    </div>
+                </div>
+                <div class="menu-list__dessert">
+                    <span class="menu-list__dessert--title">desserts</span>
+                        <div class="menu-list__dessert--content">
+                            <span>Paris-Brest</span>
+                            <span>Revisité</span>
+                            <span>18€</span>
+                        </div>
+                        <div class="menu-list__dessert--content">
+                            <span>Macaron au chocolat d'exception</span>
+                            <span>Et glace à la vanille de Madagascar</span>
+                            <span>22€</span>
+                        </div>
+                        <div class="menu-list__dessert--content">
+                            <span>Mousse au chocolat</span>
+                            <span>Au piment d'Espelette et à la truffe noire</span>
+                            <span>23€</span>
+                        </div>
+                    </div>
         </section>
     </main>
     <footer>
@@ -34,10 +93,13 @@
             <span class="footer__title-police title-police">ohmyfood</span>
             <div class="footer__nav">
                 <ul>
-                    <li class="plain-text footer__text"><a><i class="fa-solid fa-utensils footer__list--logo1"></i>Proposer un restaurant</a></li>
-                    <li class="plain-text footer__text"><a><i class="fa-solid fa-handshake-angle footer__list--logo2"></i>Devenir partenaire</a></li>
+                    <li class="plain-text footer__text"><a><i
+                                class="fa-solid fa-utensils footer__list--logo1"></i>Proposer un restaurant</a></li>
+                    <li class="plain-text footer__text"><a><i
+                                class="fa-solid fa-handshake-angle footer__list--logo2"></i>Devenir partenaire</a></li>
                     <li class="plain-text footer__text"><a>Mentions légales</a></li>
-                    <li class="plain-text footer__text"><a class="footer__list--contact" href="mailto:contact@ohmyfood.com" target="_blank">Contact</a></li>
+                    <li class="plain-text footer__text"><a class="footer__list--contact"
+                            href="mailto:contact@ohmyfood.com" target="_blank">Contact</a></li>
                 </ul>
             </div>
         </div>
