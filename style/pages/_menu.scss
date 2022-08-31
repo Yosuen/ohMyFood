@@ -11,6 +11,8 @@
 }
 
 .title-heart {
+    display: flex;
+    justify-content: space-between;
     position: relative;
     padding: 2em 1.5em;
     margin-top: -2.5em;
@@ -19,15 +21,21 @@
 
     &__heart {
         @include heart-gradient;
+        left: 0;
         top: 0;
-        left: 45px;
 
-        &--empty::before {
-            font-size: 2em;
+        &--empty {
+
+            position: absolute;
+
+            &::before {
+                font-size: 2em;
+
+            }
         }
 
         &--full {
-            left: -2.23em;
+            left: 0;
 
             &::before {
                 font-size: 2em;
@@ -53,7 +61,7 @@
         position: relative;
     }
 
-    &__title:after{
+    &__title:after {
         content: '';
         width: 42px;
         position: absolute;
@@ -63,23 +71,48 @@
     }
 
     &__content {
+        display: flex;
+        justify-content: space-between;
         background-color: white;
         padding: 1em;
         border-radius: 20px;
         box-shadow: 2px 2px 10px 1px #e6e6e6;
         margin: 10px 0;
-        
+
+        &:hover {
+            .menu-list__content--check {
+                visibility: visible;
+                //use visibility for animation
+            }
+        }
+
         &--1 {
             font-size: 1.1em;
             font-weight: 600;
         }
+
         &--2 {
             font-size: 0.9em;
             text-overflow: ellipsis;
+            overflow: hidden;
+            white-space: nowrap;
+            padding-right: 2px;
         }
+
         &--3 {
             float: right;
             font-weight: 600;
+        }
+
+        &--nowrap {
+            display: flex;
+            flex-wrap: nowrap;
+            justify-content: space-between;
+        }
+
+        &--check {
+            visibility: hidden;
+            //before animation
         }
     }
 }

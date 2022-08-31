@@ -335,6 +335,12 @@ footer {
 }
 
 .title-heart {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   position: relative;
   padding: 2em 1.5em;
   margin-top: -2.5em;
@@ -345,8 +351,8 @@ footer {
   position: relative;
   left: 90%;
   top: -55%;
+  left: 0;
   top: 0;
-  left: 45px;
 }
 .title-heart__heart--empty {
   color: black;
@@ -371,11 +377,14 @@ footer {
 .title-heart__heart--full::before {
   font-size: 1.5em;
 }
+.title-heart__heart--empty {
+  position: absolute;
+}
 .title-heart__heart--empty::before {
   font-size: 2em;
 }
 .title-heart__heart--full {
-  left: -2.23em;
+  left: 0;
 }
 .title-heart__heart--full::before {
   font-size: 2em;
@@ -410,12 +419,21 @@ footer {
   border-bottom: 3px solid #99e2d0;
 }
 .menu-list__content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   background-color: white;
   padding: 1em;
   border-radius: 20px;
   -webkit-box-shadow: 2px 2px 10px 1px #e6e6e6;
           box-shadow: 2px 2px 10px 1px #e6e6e6;
   margin: 10px 0;
+}
+.menu-list__content:hover .menu-list__content--check {
+  visibility: visible;
 }
 .menu-list__content--1 {
   font-size: 1.1em;
@@ -424,10 +442,26 @@ footer {
 .menu-list__content--2 {
   font-size: 0.9em;
   text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+  padding-right: 2px;
 }
 .menu-list__content--3 {
   float: right;
   font-weight: 600;
+}
+.menu-list__content--nowrap {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+.menu-list__content--check {
+  visibility: hidden;
 }
 
 .menu-bouton {
