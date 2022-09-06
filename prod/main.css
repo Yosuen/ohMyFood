@@ -85,6 +85,39 @@ footer {
   color: white;
 }
 
+.loc-pin {
+  padding-right: 15px;
+}
+
+@-webkit-keyframes fadeInTop {
+  0% {
+    top: -5em;
+    visibility: hidden;
+  }
+  1% {
+    visibility: visible;
+    opacity: 0;
+  }
+  100% {
+    top: 0;
+    opacity: 1;
+  }
+}
+
+@keyframes fadeInTop {
+  0% {
+    top: -5em;
+    visibility: hidden;
+  }
+  1% {
+    visibility: visible;
+    opacity: 0;
+  }
+  100% {
+    top: 0;
+    opacity: 1;
+  }
+}
 .localisation {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -431,9 +464,14 @@ footer {
   -webkit-box-shadow: 2px 2px 10px 1px #e6e6e6;
           box-shadow: 2px 2px 10px 1px #e6e6e6;
   margin: 10px 0;
+  overflow: hidden;
+  position: relative;
 }
 .menu-list__content:hover .menu-list__content--check {
   visibility: visible;
+  left: 85%;
+  -webkit-transition: 0.5s ease-in-out;
+  transition: 0.5s ease-in-out;
 }
 .menu-list__content--1 {
   font-size: 1.1em;
@@ -461,7 +499,80 @@ footer {
           justify-content: space-between;
 }
 .menu-list__content--check {
+  height: 100%;
+  width: 15%;
+  color: white;
+  background-color: #99e2d0;
   visibility: hidden;
+  position: absolute;
+  left: 100%;
+  top: 0%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+.menu-list__content--description {
+  width: 100%;
+}
+
+.show-animation {
+  position: relative;
+  -webkit-animation: 1s ease-in-out 0s 1 fadeInTop;
+          animation: 1s ease-in-out 0s 1 fadeInTop;
+}
+.show-animation__1 {
+  -webkit-animation-delay: 10ms;
+          animation-delay: 10ms;
+}
+.show-animation__2 {
+  -webkit-animation-delay: 0.2s;
+          animation-delay: 0.2s;
+}
+.show-animation__3 {
+  -webkit-animation-delay: 0.4s;
+          animation-delay: 0.4s;
+}
+.show-animation__4 {
+  -webkit-animation-delay: 0.6s;
+          animation-delay: 0.6s;
+}
+.show-animation__5 {
+  -webkit-animation-delay: 0.8s;
+          animation-delay: 0.8s;
+}
+.show-animation__6 {
+  -webkit-animation-delay: 1s;
+          animation-delay: 1s;
+}
+.show-animation__7 {
+  -webkit-animation-delay: 1.2s;
+          animation-delay: 1.2s;
+}
+.show-animation__8 {
+  -webkit-animation-delay: 1.4s;
+          animation-delay: 1.4s;
+}
+.show-animation__9 {
+  -webkit-animation-delay: 1.6s;
+          animation-delay: 1.6s;
+}
+.show-animation__10 {
+  -webkit-animation-delay: 1.8s;
+          animation-delay: 1.8s;
+}
+.show-animation__11 {
+  -webkit-animation-delay: 2s;
+          animation-delay: 2s;
+}
+.show-animation__12 {
+  -webkit-animation-delay: 2.2s;
+          animation-delay: 2.2s;
 }
 
 .menu-bouton {
@@ -473,8 +584,4 @@ footer {
 
 .margin-button {
   padding: 50px;
-}
-
-.loc-pin {
-  padding-right: 15px;
 }/*# sourceMappingURL=main.css.map */

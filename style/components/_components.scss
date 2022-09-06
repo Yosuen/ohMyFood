@@ -1,3 +1,18 @@
 .loc-pin {
     padding-right : 15px;
 }
+
+@keyframes fadeInTop {
+    0% {
+        top: -5em;
+        visibility: hidden;
+    }
+    1% {
+        visibility: visible;
+        opacity: 0;
+    }
+    100% {
+        top: 0;
+        opacity: 1;
+    }
+}
