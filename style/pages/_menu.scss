@@ -74,7 +74,6 @@
         display: flex;
         justify-content: space-between;
         background-color: white;
-        padding: 1em;
         border-radius: 20px;
         box-shadow: 2px 2px 10px 1px #e6e6e6;
         margin: 10px 0;
@@ -83,9 +82,12 @@
 
         &:hover {
             .menu-list__content--check {
-                visibility: visible;
-                left: 85%;
-                transition: 0.5s ease-in-out;
+                display: flex;
+                transition: all 1s ease-out;
+                margin-right: 0;
+            }
+            .fa-circle-check {
+                animation: spin 1s ease-in 1;
             }
         }
 
@@ -103,7 +105,6 @@
         }
 
         &--3 {
-            float: right;
             font-weight: 600;
         }
 
@@ -114,22 +115,18 @@
         }
 
         &--check {
-            height: 100%;
-            width: 15%;
+            width: 30%;
+            margin-right: -30%;
             color: white;
             background-color: $mint;
-            visibility: hidden;
-            position: absolute;
-            left: 100%;
-            top: 0%;
-            display: flex;
+            display: flex; 
             align-items: center;
             justify-content: center;
-            //before animation
         }
 
         &--description {
             width: 100%;
+            padding: 1em;
         }
     }
 }
