@@ -32,6 +32,7 @@
 }
 
 .bouton-explorer {
+    cursor: pointer;
     @include flex-center;
 
     &__button {
@@ -166,4 +167,50 @@
     margin-top: 10px;
 }
 
+.new-mark {
+    position: relative;
+    width: fit-content;
+    padding: 5px;
+    top: -90%;
+    font-weight: 600;
+    border-radius: 3px;
+    right: -75%;
+    background-color: #8fe3d1;
+    color: #116149;
+}
 
+@media (min-width: 1024px) {
+    .logo {
+        scale: 0.5;
+    }
+    .fonctionnement__tile {
+        display: flex;
+        flex-direction: row;
+        &>* {
+            margin-right: 55px;
+        }
+    }
+    
+    .tile-menu {
+        width: 45%;
+        margin-right: 5%;
+    }
+
+    .restaurant {
+        padding: 6% 0 6% 6%;
+        display: flex;
+        flex-flow: row wrap;
+    }
+
+    .tile-title {
+        position: absolute;
+        margin-top: -650px;
+    }
+    .new-mark {
+        right: -85%;
+    }
+
+    .fonctionnement {
+        padding: 50px;
+    }
+}

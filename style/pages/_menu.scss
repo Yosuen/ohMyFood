@@ -1,4 +1,6 @@
 .arrow-back {
+    position: absolute;
+    right: 85%;
     display: flex;
     align-items: center;
     padding: 1em;
@@ -83,11 +85,11 @@
         &:hover {
             .menu-list__content--check {
                 display: flex;
-                transition: all 1s ease-out;
+                transition: all 0.5s ease-out;
                 margin-right: 0;
             }
             .fa-circle-check {
-                animation: spin 1s ease-in 1;
+                animation: spin 0.5s ease-in 1;
             }
         }
 
@@ -133,52 +135,76 @@
 
 .show-animation {
     position: relative;
-    animation: 1s ease-in-out 0s 1 fadeInTop;
+    animation: 0.5s ease-in-out 0s 1 fadeInTop;
 
     &__1 {
         animation-delay: 10ms;
     }
     &__2 {
-        animation-delay: 0.2s;
+        animation-delay: 0.1s;
     }
     &__3 {
-        animation-delay: 0.4s;
+        animation-delay: 0.2s;
     }
     &__4 {
-        animation-delay: 0.6s;
+        animation-delay: 0.3s;
     }
     &__5 {
-        animation-delay: 0.8s;
+        animation-delay: 0.4s;
     }
     &__6 {
-        animation-delay: 1s;
+        animation-delay: 0.5s;
     }
     &__7 {
-        animation-delay: 1.2s;
+        animation-delay: 0.6s;
     }
     &__8 {
-        animation-delay: 1.4s;
+        animation-delay: 0.7s;
     }
     &__9 {
-        animation-delay: 1.6s;
+        animation-delay: 0.8s;
     }
     &__10 {
-        animation-delay: 1.8s;
+        animation-delay: 0.9s;
     }
-    &__11 {
-        animation-delay: 2s;
+    //add more if needed
+}
+
+.margin-button {
+    padding-bottom: 25%;
+    display: flex;
+    justify-content: center;
+}
+
+.img-top-menu {
+    max-height: 260px;
+}
+
+@media (min-width: 1024px) {
+    .menu-list {
+        padding: 3%;
+        flex-flow: row nowrap;
+        align-items: stretch;
     }
-    &__12 {
-        animation-delay: 2.2s;
+    .menu-part {
+        display: flex;
+        flex-flow: column nowrap;
+        justify-content: space-between;
+        align-items: stretch;
+        &__1 {
+            margin-right: auto;
+            width: 30%;
+        }
+        &__2 {
+            margin-right: auto;
+            width: 30%;
+        }
+        &__3 {
+            width: 30%;
+        }
     }
 }
 
 .menu-bouton {
-    margin: 0;
-    position: absolute;
-    transform: translate(65%, -80%);
-}
-
-.margin-button {
-    padding: 50px;
+    padding: 0 50px;
 }

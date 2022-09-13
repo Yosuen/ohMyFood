@@ -19,13 +19,14 @@
 
     &--full {
         position: relative;
-        opacity: 0%;
+        opacity: 0;
         color: transparent;
         background: linear-gradient($rose, $violet);
         background-clip: text;
+        right: 28px;
 
         &:hover {
-            transition: opacity 0.5s;
+            transition: opacity 0.5s ease-out;
             opacity: 1;
         }
 
