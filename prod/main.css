@@ -430,9 +430,23 @@ footer {
   -webkit-animation: fadeout 3s ease 1 normal;
           animation: fadeout 3s ease 1 normal;
 }
-.loader__icon {
+.loader__icon--1 {
+  position: absolute;
+  color: #99e2d0;
   -webkit-animation: spin 1s ease-in-out 2;
           animation: spin 1s ease-in-out 2;
+}
+.loader__icon--2 {
+  position: absolute;
+  color: #9356dc;
+  -webkit-animation: spin 1s 0.1s ease-in-out 2;
+          animation: spin 1s 0.1s ease-in-out 2;
+}
+.loader__icon--3 {
+  position: absolute;
+  color: #ff79da;
+  -webkit-animation: spin 1s 0.2s ease-in-out 2;
+          animation: spin 1s 0.2s ease-in-out 2;
 }
 
 @media (min-width: 1024px) {
