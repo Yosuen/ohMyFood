@@ -80,20 +80,20 @@
         margin-left: 25px;
         margin-right: 25px;
 
-        &--grey {
+        &--tile {
             width: 100%;
             border-radius: 25px;
             margin: 25px 0;
             background-color: #f5f5f5;
             box-shadow: 0px 8px 6px rgb(0 0 0 / 15%);
-        }
 
-        &--purple {
-            width: 100%;
-            border-radius: 25px;
-            margin: 25px 0;
-            background-color: #f5edfe;
-            box-shadow: 0px 8px 6px rgb(0 0 0 / 15%);
+            &:hover {
+                background-color: #f5edfe;
+
+                .fonctionnement__logo--color {
+                    color: $violet;
+                }
+            }
         }
     }
 
@@ -105,14 +105,9 @@
     &__logo {
         padding-right: 5px;
 
-        &--grey {
+        &--color {
             color: #7c7c7c;
         }
-
-        &--purple {
-            color: $violet;
-        }
-
     }
 }
 
@@ -135,27 +130,34 @@
     text-decoration: none;
     color: black;
 
-    &__img { //contain image
+    &__img {
+        //contain image
         max-height: 74%;
         width: 100%;
     }
+
     &__text {
         justify-content: space-between;
         display: flex;
         flex-direction: column;
     }
+
     &__title {
         font-size: 1em;
         font-weight: 600;
     }
+
     &__info {
         padding: 1rem;
         text-decoration: none;
     }
-    &__image { //image itself
+
+    &__image {
+        //image itself
         object-fit: cover;
         width: 100%;
     }
+
     &__heart {
         @include heart-gradient;
     }
@@ -194,6 +196,7 @@
     scale: 5;
     overflow: hidden;
     animation: fadeout 3s ease 1 normal;
+
     &__icon {
         animation: spin 1s ease-in-out 2;
     }
@@ -204,14 +207,16 @@
     .logo-index {
         scale: 0.5;
     }
+
     .fonctionnement__tile {
         display: flex;
         flex-direction: row;
+
         &>* {
             margin-right: 55px;
         }
     }
-    
+
     .tile-menu {
         width: 45%;
         margin-right: 5%;
@@ -227,6 +232,7 @@
         position: absolute;
         margin-top: -650px;
     }
+
     .new-mark {
         right: -85%;
     }
