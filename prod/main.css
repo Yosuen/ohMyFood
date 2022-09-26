@@ -237,6 +237,12 @@ footer {
   -webkit-box-shadow: 0px 8px 6px rgba(0, 0, 0, 0.15);
           box-shadow: 0px 8px 6px rgba(0, 0, 0, 0.15);
 }
+.bouton-explorer__button:hover {
+  -webkit-filter: brightness(120%);
+          filter: brightness(120%);
+  -webkit-box-shadow: 0px 12px 10px rgba(0, 0, 0, 0.25);
+          box-shadow: 0px 12px 10px rgba(0, 0, 0, 0.25);
+}
 .bouton-explorer__plain-text {
   font-size: larger;
   font-weight: 600;
@@ -255,6 +261,7 @@ footer {
   height: -webkit-fit-content;
   height: -moz-fit-content;
   height: fit-content;
+  background-color: white;
 }
 .fonctionnement__title {
   padding-left: 20px;
@@ -715,7 +722,7 @@ footer {
 }
 
 .margin-button {
-  padding-bottom: 25%;
+  padding-bottom: 50px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;

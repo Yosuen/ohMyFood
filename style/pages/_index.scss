@@ -35,6 +35,8 @@
     cursor: pointer;
     @include flex-center;
 
+
+
     &__button {
         margin-top: 20px;
         height: 55px;
@@ -43,6 +45,11 @@
         background: linear-gradient($rose, $violet);
         padding: 0 20px;
         box-shadow: 0px 8px 6px rgb(0 0 0 / 15%);
+
+        &:hover {
+            filter: brightness(120%);
+            box-shadow: 0px 12px 10px rgb(0 0 0 / 25%);
+        }
     }
 
     &__plain-text {
@@ -50,6 +57,8 @@
         font-weight: 600;
         color: #fff;
     }
+
+
 }
 
 .fonctionnement {
@@ -57,6 +66,7 @@
     padding: 50px 0;
     flex-direction: column;
     height: fit-content;
+    background-color: white;
 
     &__title {
         padding-left: 20px;
@@ -201,11 +211,13 @@
             color: $mint;
             animation: spin 1s ease-in-out 2;
         }
+
         &--2 {
             position: absolute;
             color: $violet;
             animation: spin 1s 0.1s ease-in-out 2;
         }
+
         &--3 {
             position: absolute;
             color: $rose;
