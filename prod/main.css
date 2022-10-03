@@ -336,6 +336,7 @@ footer {
   color: black;
 }
 .tile-menu__img {
+  position: relative;
   max-height: 74%;
   width: 100%;
 }
@@ -401,15 +402,15 @@ footer {
 }
 
 .new-mark {
-  position: relative;
+  position: absolute;
   width: -webkit-fit-content;
   width: -moz-fit-content;
   width: fit-content;
   padding: 5px;
-  top: -90%;
+  top: 15px;
   font-weight: 600;
   border-radius: 3px;
-  right: -75%;
+  right: 15px;
   background-color: #8fe3d1;
   color: #116149;
 }
@@ -489,9 +490,6 @@ footer {
   .tile-title {
     position: absolute;
     margin-top: -650px;
-  }
-  .new-mark {
-    right: -85%;
   }
   .fonctionnement {
     padding: 50px;
@@ -668,6 +666,9 @@ footer {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+}
+.menu-list__content--check .fa-solid {
+  font-size: 25px;
 }
 .menu-list__content--description {
   width: 100%;
